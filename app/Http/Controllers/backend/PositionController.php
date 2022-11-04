@@ -13,7 +13,7 @@ class PositionController extends Controller
     public function index()
     {
         $data = DB::table('mision_positions') -> get();
-        return view('backend.demobackend')->with('data', $data);
+        return view('frontend.layouts.home')->with('data', $data);
     }
 
     public function add(Request $request)

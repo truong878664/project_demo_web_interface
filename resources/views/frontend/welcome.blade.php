@@ -18,7 +18,7 @@
 <body>
  
     <div class="container">
-    khi code đã lên trên website của github, thì chúng ta lên trên đó để tạo Pull Request, merge code từ search_ui into develop, web hướng dẫn rất rõ ràng và dễ làm, không cần phải nói thêm nữa.
+
         <div class="jumbotron text-center header" style="margin-bottom:0">
             <h1>Demo robot</h1>
         </div>
