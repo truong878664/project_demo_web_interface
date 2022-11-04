@@ -15,15 +15,9 @@ use App\Http\Controllers\backend\PositionController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-
-// fontend
-
-
-
+Route::get('/', function () {
+    return view('welcome');
+});
 
 // backend
 Route::get('/', [PositionController::class, 'index']);
