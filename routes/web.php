@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\backend\PositionController;
+use App\Http\Controllers\DemoController;
+
 
 
 /*
@@ -14,10 +16,24 @@ use App\Http\Controllers\backend\PositionController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//frontend
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/save-text', [DemoController::class, 'save_text']);
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 // backend
-Route::get('/', [PositionController::class, 'index']);
+
+Route::prefix('/position')->group(function () {
+
+    Route::get('/', [PositionController::class, 'index']);
+    
+    Route::get('/item/{id}', [PositionController::class, 'getItemById']);
+
+    Route::post('/add', [PositionController::class, 'add']);
+
+    Route::delete('/delete/{id}',[PositionController::class, 'delete']);
+});
+
+

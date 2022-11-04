@@ -22,11 +22,11 @@
         <form method="post" action="position/add">
             {{-- <input name="id"> --}}
 
-            <input name="name_position">
-            <input name="position_x">
-            <input name="position_y">
-            <input name="rotation_z">
-            <input name="description">
+            <input placeholder="Name Position" name="name_position">
+            <input placeholder="X" name="position_x">
+            <input placeholder="Y" name="position_y">
+            <input placeholder="X" name="rotation_z">
+            <input placeholder="Description" name="description">
             <input type="submit" value="submit">
             @csrf
         </form>
@@ -36,6 +36,9 @@
             <input type="submit" value="xoa">
         </form>
         
+        {{
+          $data
+        }}
 
     </div>
 
