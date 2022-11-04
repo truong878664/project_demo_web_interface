@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DemoController;
+use App\Http\Controllers\backend\PositionController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,10 +13,12 @@ use App\Http\Controllers\DemoController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('layouts/home');
-});
+//frontend
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 Route::get('/save-text',[DemoController::class,'save_text']);
 
 
+// backend
+ Route::get('/', [PositionController::class, 'index']);
