@@ -19,6 +19,8 @@ use App\Http\Controllers\backend\MapController;
 */
 //frontend
 
+// Route::view('/', 'frontend.layouts.edit.edit');
+
 Route::view('/', 'frontend.layouts.home');
 
 
