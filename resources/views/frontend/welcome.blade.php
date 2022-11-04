@@ -46,19 +46,12 @@
         <div class="row">
 
             <div class="col-sm-3">
-                <h3>Menu left</h3>
-                <p>Danh sach menu</p>
+                <p>Chon map </p>
                 <ul class="nav nav-pills flex-column">
                     <li class="nav-item">
                     <li class="nav-item">
                         <input type="file" name="image_product" ></th>
                     </li>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">B</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">C</a>
                     </li>
 
                 </ul>

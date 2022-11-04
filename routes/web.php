@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DemoController;
+use App\Http\Controllers\frontend\DemoController;
 use App\Http\Controllers\backend\PositionController;
 /*
 |--------------------------------------------------------------------------
@@ -13,12 +13,10 @@ use App\Http\Controllers\backend\PositionController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-//frontend
-// Route::get('/', function () {
-//     return view('welcome');
+
+// Route::view('/', 'frontend/layouts/home');
+// Route::get('/', function() {
+//     return view('frontend.welcome');
 // });
-Route::get('/save-text',[DemoController::class,'save_text']);
 
-
-// backend
- Route::get('/', [PositionController::class, 'index']);
+Route::view('/', 'frontend.layouts.home');

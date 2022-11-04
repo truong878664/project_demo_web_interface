@@ -13,5 +13,10 @@ class PositionController extends Controller
     public function index() {
         $data = MisionPosition::all();
         return $data;
+
+    }
+    public function index1(Request $request) {
+        // dd($request->all());
+        return view('frontend.welcome');
     }
 }
