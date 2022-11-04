@@ -1,24 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Demo</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="main.css">
-  <style>
-  .fakeimg {
-    height: 200px;
-    background: #aaa;
-  }
-  </style>
+    <title>Demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .fakeimg {
+            height: 200px;
+            background: #aaa;
+        }
+    </style>
 </head>
+
 <body>
- 
+
     <div class="container">
-    
+
         <form method="post" action="position/add">
             {{-- <input name="id"> --}}
 
@@ -35,13 +36,22 @@
             @csrf
             <input type="submit" value="xoa">
         </form>
-        
-        {{
-          $data
-        }}
+
+        {{-- <form method="get" action="insert-map"> --}}
+            {{-- <input type="file" name="inputMap"> --}}
+            {{-- <input type="submit" value="send file"> --}}
+        {{-- </form> --}}
+        <form method="post" enctype="multipart/form-data" action='insert-map'>
+          <input type="file" id="inputmap" name="inputmap">
+          <input type="submit" value="gui file">
+          {{ csrf_field() }}
+        </form>
+
+        {{ $data }}
 
     </div>
 
- 
+
 </body>
+
 </html>

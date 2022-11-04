@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\backend\PositionController;
-use App\Http\Controllers\DemoController;
+use App\Http\Controllers\backend\MapController;
+
 
 
 
@@ -17,14 +18,11 @@ use App\Http\Controllers\DemoController;
 |
 */
 //frontend
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-Route::get('/save-text', [DemoController::class, 'save_text']);
+
+Route::view('/', 'frontend.layouts.home');
 
 
 // backend
-
 Route::prefix('/position')->group(function () {
 
     Route::get('/', [PositionController::class, 'index']);
@@ -36,4 +34,4 @@ Route::prefix('/position')->group(function () {
     Route::delete('/delete/{id}',[PositionController::class, 'delete']);
 });
 
-
+Route::post('insert-map', [MapController::class ,'insertMap']);

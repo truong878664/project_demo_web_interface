@@ -1,0 +1,12 @@
+add router: /frontend/add-robot NameController@add_robot
+
+return add_robot
+
+delete router: /frontend/delete-robot NameController@delete_robot
+
+ return delete_robot
+
+edit router: /frontend/edit-robot NameController@edit_robot
+
+return edit_robot
+
