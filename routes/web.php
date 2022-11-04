@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\DemoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('layouts/home');
 });
-Route::get('/save-text',[ProductController::class,'save_text']);
+Route::get('/save-text',[DemoController::class,'save_text']);
 
 

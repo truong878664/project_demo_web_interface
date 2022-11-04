@@ -7,7 +7,7 @@
     {{ csrf_field() }}
         <div class="form-group">
             <label for="exampleInputEmail1">Write Something</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            <input type="email" class="form-control" id="exampleInputEmail1" name="name" placeholder="Enter email">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
