@@ -18,7 +18,7 @@
 <body>
  
     <div class="container">
-    
+    khi code đã lên trên website của github, thì chúng ta lên trên đó để tạo Pull Request, merge code từ search_ui into develop, web hướng dẫn rất rõ ràng và dễ làm, không cần phải nói thêm nữa.
         <div class="jumbotron text-center header" style="margin-bottom:0">
             <h1>Demo robot</h1>
         </div>
@@ -37,16 +37,17 @@
                 <a class="nav-link" href="#">Mission</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">control</a>
+                <a class="nav-link" href="#">Control</a>
             </li>    
             </ul>
         </div>  
         </nav>
 
         <div class="row">
-
+            
             <div class="col-sm-3">
-                <p>Chon map </p>
+                <br>
+                <h3>Chon map</h3> 
                 <ul class="nav nav-pills flex-column">
                     <li class="nav-item">
                     <li class="nav-item">
@@ -61,14 +62,11 @@
             <div class="col-sm-9">
                 @yield('content')
             </div>
-            
         </div>
     </div>
-
     <div class="jumbotron text-center" style="margin-bottom:0">
         <p>Demo duoc thuc hien boi Thao va Truong</p>
     </div>
 
- 
 </body>
 </html>

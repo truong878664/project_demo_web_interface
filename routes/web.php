@@ -19,4 +19,6 @@ use App\Http\Controllers\backend\PositionController;
 //     return view('frontend.welcome');
 // });
 
+// Route::view('/', 'frontend.layouts.edit.edit');
+
 Route::view('/', 'frontend.layouts.home');
