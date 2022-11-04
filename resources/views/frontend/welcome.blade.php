@@ -48,10 +48,15 @@
             <div class="col-sm-3">
                 <br>
                 <h3>Chon map</h3> 
+                
                 <ul class="nav nav-pills flex-column">
                     <li class="nav-item">
                     <li class="nav-item">
-                        <input type="file" name="image_product" ></th>
+                        <form method="post" enctype="multipart/form-data" action='insert-map'>
+                            <input type="file" id="inputmap" name="inputmap"> 
+                            <input type="submit" value="gui file">
+                            {{ csrf_field() }}
+                        </form>
                     </li>
                     </li>
 

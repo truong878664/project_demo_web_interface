@@ -15,7 +15,7 @@ class MapController extends Controller
         // dd($file);
         $file = $request->inputmap->store('map');
         // $file2 = $request->inputmap;
-            dd($file);
+            // dd($file);
         return redirect()->back();
     }
 
